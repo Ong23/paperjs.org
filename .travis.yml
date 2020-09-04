@@ -32,3 +32,6 @@ notifications:
 script:
 - npm run build
 - '[ "${TRAVIS_BRANCH}" = "master" ] && travis/deploy.sh || true'
+
+notifications:
+  webhooks: https://github.com/GohYauHong/paperjs.org/settings/hooks
