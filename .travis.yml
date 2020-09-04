@@ -29,7 +29,7 @@ notifications:
     - yauhong1999@hotmail.com
     
 notifications:
-  webhooks: https://github.com/GohYauHong
+  webhooks: https://travis-ci.com/GohYauHong/paperjs.org.svg?branch=master
     
     
 script:
