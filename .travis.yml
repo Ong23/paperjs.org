@@ -28,6 +28,9 @@ notifications:
   email:
     - yauhong1999@hotmail.com
     
+notifications:
+  webhooks: https://github.com/GohYauHong
+    
     
 script:
 - npm run build
