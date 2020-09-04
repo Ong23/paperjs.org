@@ -23,6 +23,12 @@ install:
 before_script:
 - npm set progress=false
 - npm install
+
+notifications:
+  email:
+    - yauhong1999@hotmail.com
+    
+    
 script:
 - npm run build
 - '[ "${TRAVIS_BRANCH}" = "master" ] && travis/deploy.sh || true'
