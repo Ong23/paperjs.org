@@ -29,12 +29,11 @@ notifications:
     - yauhong1999@hotmail.com
     
 notifications:
-  webhooks: https://travis-ci.com/GohYauHong/paperjs.org.svg?branch=master
-    
-    
+  webhooks: 
+    - https://travis-ci.com/GohYauHong/paperjs.org.svg?branch=master
+    - https://github.com/GohYauHong/paperjs.org/settings/hooks
+
 script:
 - npm run build
 - '[ "${TRAVIS_BRANCH}" = "master" ] && travis/deploy.sh || true'
 
-notifications:
-  webhooks: https://github.com/GohYauHong/paperjs.org/settings/hooks
